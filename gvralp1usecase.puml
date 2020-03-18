@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor gamer
+gamer -- (user launches game)
+gamer -- (play snake)
+gamer -- (display score board)
+gamer -- (user hits an obstacle)
+
+(user launches game) --|> (The game board appears.\n enter spacebar to begin.\n escape to exit)
+(The game board appears.\n enter spacebar to begin.\n escape to exit) --|> (play snake): spacebar pressed
+(The game board appears.\n enter spacebar to begin.\n escape to exit) --|> (game over)
+(display score board) -- [score is displayed]
+(user hits an obstacle) -- (game over)
+
+
+@enduml
